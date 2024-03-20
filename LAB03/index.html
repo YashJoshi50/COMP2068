@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <form action="/LAB03" method="GET">
+            <label for="method">Method:</label>
+            <select name="method" id="method">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select><br>
+            <label for="x">Value of X:</label>
+            <input type="number" name="x" id="x" required><br>
+            <label for="y">Value of Y:</label>
+            <input type="number" name="y" id="y" required><br>
+            <button type="submit">Calculate</button>
+            <script src="server.js"></script>
+        </form>
+    </div>
+</body>
+</html>
