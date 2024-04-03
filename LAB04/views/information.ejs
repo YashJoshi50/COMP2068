@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJS | <%= description.title %></title>
+    <%- include('../partials/head'); %>
+        <!-- <link rel="stylesheet" href="css/index.css"> Adjust the path if needed -->
+        <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body style="background-color:black;">
+    <header>
+        <div class="container-fluid sticky">
+            <%- include('../partials/header'); %>
+        </div>
+    </header>
+
+
+    
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class=" p-2">
+                <h1 style="text-shadow: rgba(255, 255, 255, 0.64) 1px 0 10px ; text-align: right; padding-right:250px;
+                background: -webkit-linear-gradient(90deg, #ecad24, #fefefe);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;"><%= description.title %></h1>
+                <div class="col-7 p-5">
+
+                    <p style="color:  rgba(255, 255, 255, 0.64) 1px 0 10px ; font-size: 20px;
+                    background: -webkit-linear-gradient(45deg, #1b2fe4, #ecad24);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;">
+                        <%= description.content %>
+                    </p>
+
+                </div>
+
+                
+        </div>
+    </div>
+
+    
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>
